@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import './App.css';
 
-let uname = ["User", "User"];
+// let uname = ["User", "User"];
 
 function Child(props) {
 
-  if (props.info.log) {
-    uname[1] = uname[0];
-    uname[0] = props.info.data;
-  }
+  // if (props.info.log) {
+  //   uname[1] = uname[0];
+  //   uname[0] = props.info.data;
+  // }
 
   return (
     <>
       {
         props.info.log ?
-          <h1 id="childStyle" >Hello {uname[0]}!!! Nice to meet you {":)"}</h1>
+          <h1 id="childStyle" >Hello {props.info.data}!!! Nice to meet you {":)"}</h1>
           :
-          <h1 id="childStyle" >Hello {uname[1]}!!! Nice to meet you {":)"}</h1>
+          <h1 id="childStyle" >Hello User!!! Nice to meet you {":)"}</h1>
       }
     </>
   );
