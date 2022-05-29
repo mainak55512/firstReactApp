@@ -1,39 +1,18 @@
-#childStyle{
-  text-align: center;
-  font-size: 90px;
-  color:lightcyan;
+.App-logo {
+  width: 50px;
+  pointer-events: none;
+  margin-right: 15px;
 }
-
-#inpStyle,#buttonStyle{
-  display: block;
-  margin:auto;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 7s linear;
+  }
 }
-
-#inpStyle{
-  margin-top: 150px;
-  height: 40px;
-  width: 300px;
-  border: 2px solid;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: 900;
-  font-size: large;
-}
-
-#buttonStyle{
-  margin-top: 20px;
-  height: 35px;
-  width: 300px;
-  background-color: blue;
-  color: azure;
-  border: none;
-  outline: none;
-  border-radius: 7px;
-  font-size: large;
-  font-weight: 900;
-  font-style:inherit;
-}
-
-body{
-  background-color:indianred;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
